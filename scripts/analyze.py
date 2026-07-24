@@ -64,7 +64,10 @@ def build_scenes(duration: float, cuts: list[float], max_sec: float,
         t = a
         while b - t > max_sec:
             scenes.append((t, t + max_sec)); t += max_sec
-        scenes.append((t, b))
+        if b - t < min_sec and scenes:        # хвост короче min_sec — приклеиваем к предыдущей
+            scenes[-1] = (scenes[-1][0], b)
+        else:
+            scenes.append((t, b))
     return scenes
 
 

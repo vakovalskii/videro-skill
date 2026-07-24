@@ -1,0 +1,89 @@
+{
+  "duration_sec": 32.02,
+  "model": "qwen3.6-fp8",
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 8.0,
+      "n_frames": 3,
+      "screen_type": "slide",
+      "caption": "Начало курса: настройка, демонстрация, вопросы",
+      "action": "На экране отображается заголовок слайда презентации на русском языке, указывающий на начало курса и его план.",
+      "on_screen_text": "Введение в курс\nПлан: setup, demo, Q&A",
+      "topic": "Введение в курс",
+      "highlight": false,
+      "highlight_reason": "",
+      "importance": 1
+    },
+    {
+      "start": 8.0,
+      "end": 16.0,
+      "n_frames": 3,
+      "screen_type": "slide",
+      "caption": "Запуск демо через терминал с Docker Compose",
+      "action": "На экране отображается слайд с заголовком и командой для запуска Docker-контейнеров в фоновом режиме с пересборкой образов.",
+      "on_screen_text": "Демо: терминал\ndocker compose up -d --build",
+      "topic": "Демонстрация работы с Docker",
+      "highlight": true,
+      "highlight_reason": "Ключевой момент демонстрации — команда запуска приложения, важная для понимания процесса деплоя",
+      "importance": 4
+    },
+    {
+      "start": 16.0,
+      "end": 24.0,
+      "n_frames": 3,
+      "screen_type": "code",
+      "caption": "Код функции анализа видео",
+      "action": "На экране отображается фрагмент кода на языке Python. Функция analyze принимает видео и возвращает таймлайн.",
+      "on_screen_text": "Код: main.py\ndef analyze(video): return timeline",
+      "topic": "Программная логика",
+      "highlight": false,
+      "highlight_reason": "",
+      "importance": 2
+    },
+    {
+      "start": 24.0,
+      "end": 32.0,
+      "n_frames": 3,
+      "screen_type": "slide",
+      "caption": "Финальные итоги и вопросы к зрителям",
+      "action": "На экране отображается финальный слайд презентации с заголовком и благодарностью аудитории.",
+      "on_screen_text": "Итоги и вопросы\nСпасибо за внимание!",
+      "topic": "Завершение презентации",
+      "highlight": true,
+      "highlight_reason": "Служит завершающим аккордом презентации, подводящим итоги и открывающим время для вопросов.",
+      "importance": 5
+    },
+    {
+      "start": 32.0,
+      "end": 32.02322,
+      "n_frames": 0,
+      "screen_type": "",
+      "caption": "",
+      "action": "",
+      "on_screen_text": "",
+      "topic": "",
+      "highlight": false,
+      "highlight_reason": "",
+      "importance": 0
+    }
+  ],
+  "highlights": [
+    {
+      "start": 24.0,
+      "end": 32.0,
+      "caption": "Финальные итоги и вопросы к зрителям",
+      "reason": "Служит завершающим аккордом презентации, подводящим итоги и открывающим время для вопросов.",
+      "importance": 5
+    },
+    {
+      "start": 8.0,
+      "end": 16.0,
+      "caption": "Запуск демо через терминал с Docker Compose",
+      "reason": "Ключевой момент демонстрации — команда запуска приложения, важная для понимания процесса деплоя",
+      "importance": 4
+    }
+  ],
+  "transcript": [],
+  "srt": ""
+}
